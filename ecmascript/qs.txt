@@ -1,0 +1,12 @@
+what is ecma script? (ES)
+
+ES is a specification while javascript is an implementation of that specification
+
+es6 was the most notable update in javascript history 
+es6 added:
+classes
+promises
+destructuring
+let and const
+
+what are the differences between different ES versions and what are the pros and cons of each?

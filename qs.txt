@@ -1,0 +1,169 @@
+2. Using HTML and CSS, show how you would create an image that would display another image (aligned to the bottom, right) when the user hovers over the image. ex. The Facebook "edit profile picture" icon
+
+What are the advantages of using ES6 maps over objects? What about using ES6 sets over arrays?
+
+flatten array. recursive and iterative. also using reduce and concat. analyse complexity. follow up: flatten with specified depth
+
+Explain the concept of ES6 Promises to a 5-year-old. 
+
+Explain all the array methods. Reduce, for each, map, flat, filter etc.
+
+for in vs for of vs foreach vs traditional for (int i ..)
+
+Given input:
+
+// could be potentially more than 3 keys in the object above
+items = [
+{color: 'red', type: 'tv', age: 18},
+{color: 'silver', type: 'phone', age: 20}
+...
+]
+
+excludes = [
+{k: 'color', v: 'silver'},
+{k: 'type', v: 'tv'},
+....
+]
+function excludeItems(items, excludes) {
+   excludes.forEach(pair => {
+      items = items.filter(item => item[pair.k] === item[pair.v]);
+   });
+   return items;
+}
+
+function excludeItems(items, excludes){
+   for(let i = 0; i < excludes.length; i++){
+      
+   }
+}
+
+1. Describe what this function is doing...
+2. What is wrong with that function ?
+3. How would you optimize it ? 
+
+
+
+Given 2 identical DOM trees (but not equal) and one element of the first DOM tree, how would you find this element in the second DOM tree?  
+5 Answers
+Write an array flatten function.  
+3 Answers
+Write an emitter class:
+/*
+emitter = new Emitter();
+
+// 1. Support subscribing to events.
+sub = emitter.subscribe('event_name', callback);
+sub2 = emitter.subscribe('event_name', callback2);
+
+// 2. Support emitting events.
+// This particular example should lead to the `callback` above being invoked with `foo` and `bar` as parameters.
+emitter.emit('event_name', foo, bar);
+
+// 3. Support unsubscribing existing subscriptions by releasing them.
+sub.release(); // `sub` is the reference returned by `subscribe` above
+
+*/
+
+Can you write a function that deeply flattens an array? 
+
+I was asked basic Javascript concepts for the phone interview. For the video call I was asked to flatten an array recursively and iteratively in Javascript as well as to do some HTML and CSS design given a picture by the interviewer
+
+This was a very initial screen that was mostly non-technical with the exception of some quick and simple JavaScript pop-quiz questions at the end (== vs ===, describe event delegation, etc).
+
+Phone) Given two identical DOM tree structures, A and B, and a node from A, find the corresponding node in B.
+
+Given a picture, how would you hide/show a child picture on hovering on this parent?  
+
+How would you ensure clicking on this picture would go to a specific link?  
+
+How would you ensure the child is positioned in the top right of the parent picture?  
+
+Given an array, return it's flattened structure(skip objects)  
+
+If you have 500 revisions of a program, write a program that will find and return the FIRST bad revision given a isBad(revision i) function. 
+
+Interviews were easier than expected...pretty much basic algorithm questions in JS with some HTML/CSS mixed in 
+
+Given two identical DOM trees (not the same one), and a node from one of them find the node in the other one.  
+6 Answers
+Flatten array. This array can have multiple types: {}, [], "", undefined, null, 123 are all valid types inside the array.  
+4 Answers
+Given a grid of characters output a decoded message. The message for the following would be IROCKA. (diagonally down right and diagonally up right if you can't go further .. you continue doing this)
+
+I B C A L K A
+D R F C A E A
+G H O E L A D  
+11 Answers
+Basic JavaScript async stuff (you should know event bubbling, debounce (its variant)... know how to code it). It would be a good idea to be aware of JS closure as well.  
+Answer Question
+Poll Widget question (just know your positioning, relative, static etc know the differences inside out). You might want to know specificity as well.
+
+Prototypical inheritance and developing the question further
+
+difference between == and === , difference between block and inline
+
+Calendar challenge (as the others have said there's a challenge). I too think this was the most difficult
+
+The most difficult question was the initial puzzle, which is a sizeable project. The phone interview was mainly focused on Javascript DOM tree manipulation. On-site questions included a few quick algorithms questions (flatten an array), design/code a poll widget. All of the questions were heavy on JS, which is expected for this position. 
+
+Given a node from a DOM tree find the node in the same position from an identical DOM tree.
+
+First phone screening included couple of Javascript Questions about functions you can perform on strings. Also CSS related questions like difference between block and inline.
+
+Given an input array and another array that describes a new index for each element, mutate the input array so that each element ends up in their new index. Discuss the runtime of the algorithm and how you can be sure there won't be any infinite loop
+
+The interview process was similar to the all that were mentioned here. The basic JS questions and algo + data structures. Just study javascript and try to find solve various questions following by optimization.
+
+It was a tree traversal question. Given a tree with specific nodes to visit, traverse another tree with the same structure and visit the nodes in same positions
+
+You are given an array of N elements in the form "property1: value1; property2: value2;...;propertyX: valueX;" for some some N and any X. There is also another array of M elements of the form "property: value". You are supposed to write an algorithm to remove every element in the N length array that has a "property: value" pair in the M length array.
+The trick is that the most intuitive solution of iterating through the M array and filtering the N array at each element is already written. You must come up with a solution that solves the problem in less than O(NM) time
+
+Implement a simple store class with set(Node, value), get(Node) and has(Node) methods, which store a given Nodes with corresponding values. 
+
+How many times would `addEventListener('scroll', handleScroll);` run as the user looks at their News Feed? And what would be user experience if the `handleScroll` function takes 100ms to execute.  
+Related to question 1, how could you implement debouncing? Say you wanted the `handleScroll` function to be called only after 200ms has passed between scroll events.
+
+- Implement a Promise from scratch.
+- Implement an event emitter from scratch.
+- Implement a throttle and/or debounce function.
+- Implement an image carousel.
+- Implement a 1-5 star rating system.
+Implement a square root function.
+implement reduce method.
+
+Write a function that flattens an array (recursively, and iteratively)
+Optimize the given function
+Implement an Observable
+Explain the concept of Promises to a 5 year old
+What are the advantages of using ES6 maps over objects?
+What are the advantages of using ES6 sets over arrays?
+Given 2 identical (but not equal) DOM trees and one element of the first DOM tree, how would you find this element in the second DOM tree?
+Contribute
+
+https://dev.to/coderbyte/a-javascript-interview-question-asked-at-google-19f1
+
+lexical scope
+
+all of the key words
+difference between functions
+generators, async/await, promises
+differences between ES versions, pros/cons
+he said look at glassdoor for sure
+that's ab all he told me
+know difference between for each and for in and for of, their exact differences
+
+window and global context
+call, bind, apply
+
+local storage is persistent and session storage only lasts until the tab is closed
+both are stored locally on your machine by the browser
+
+setTimeout and setInterval
+
+what is DOM API?
+what is DOM tree?
+what are jQuery and bootstrap?
+
+
+write code on paper/google doc , i.e without ide for better practice
