@@ -18,14 +18,51 @@ function flattenHelper(outputArr, originalArr){
 
 function flatten(arr){
     if(arr.length === 0) return [];
-    if(arr === null) throw new Error('Empty array');
+    if(!arr) throw new Error('Invalid argument for array');
     const output = [];
     flattenHelper(output, arr);
     return output;
 }
-console.log('hello')
 console.log(flatten(arr2))
 
 /**
  * follow up: do it iteratively
  */
+
+function flattenIterative(arr){
+    if(arr.length === 0) return arr;
+    if(!arr) throw new Error('Array expected');
+    const output = [];
+    
+    //const arr2 = [[0], [[1]], 2, [[[3, 4]]]];
+
+    let stack = [];
+    let i = 0;
+    stack.push(arr[0])
+    while(stack.length > 0 && i < arr.length){
+        let current = stack.pop();
+        if(Array.isArray(current)) {
+            for(const value of current) stack.unshift(value)
+        }
+        else {
+            output.push(current);
+            if(stack.length === 0){
+                ++i;
+                if(i < arr.length) stack.push(arr[i]);
+            }
+        }
+    }
+    return output;
+}
+
+// [[[0]], [[1]], 2, [[[3, 4]]]];
+console.log(flattenIterative([[[0]], [[1,2]], 2, [[[3, 4]]]]));
+console.log(flattenIterative([[0], [[1]], 2, [[[3, 4]]]]));
+console.time('start')
+flattenIterative([[[[[1,2,[10,1,0,[55,[90],[12]]],[56,[[[90]]]]]]]]]), 
+[[[[[1,2,[10,1,0,[55,[90],[12]]],[56,[[[90]]]]]]]]],
+[[[[[1,2,[10,1,0,[55,[90],[12]]],[56,[[[90]]]]]]]]],
+[[[[[1,2,[10,1,0,[55,[90],[12]]],[56,[[[90]]]]]]]]],
+[[[[[1,2,[10,1,0,[55,[90],[12]]],[56,[[[90]]]]]]]]],
+[[[[[1,2,[10,1,0,[55,[90],[12]]],[56,[[[90]]]]]]]]];
+console.timeEnd('start')

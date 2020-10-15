@@ -1,0 +1,54 @@
+Know how to use Map, set, weakmap, weakset and all built in data structures
+know their methods and API well
+know their performance characteristics and when to use each
+
+Understand DOM tree well and manipulating it, what it represents, etc.
+memorize common DOM api functions and methods
+
+
+
+Leetcode - First bad version
+
+Common binary tree problems (go through leetcode for this)
+
+be comfortable with tree traversal, iterative and recursive
+
+Binary search
+Array flatten. iterative and recursive
+implement promise from scratch
+implement all array methods from scratch. iterative and recursive
+implement event emitter
+implement observable
+- Implement a throttle and/or debounce function.
+
+Given 2 identical (but not equal) DOM trees and one element of the first DOM tree, 
+how would you find this element in the second DOM tree?
+
+Implement a square root function.
+
+write even emitter from scratch
+glassdoor question optimization question
+
+You are given an array of N elements in the form "property1: value1; property2: value2;...;propertyX: valueX;" 
+for some some N and any X. There is also another array of M elements of the form "property: value".
+ You are supposed to write an algorithm to remove every element in the N length array that has a 
+ "property: value" pair in the M length array.
+The trick is that the most intuitive solution of iterating through the M array and
+ filtering the N array at each element is already written. You must come up with a solution
+  that solves the problem in less than O(NM) time
+
+GCD algorithm
+
+Career cup
+
+what are other classical coding questions that first - third years should know ?
+
+How many times would `addEventListener('scroll ', handleScroll);` run as the user looks at their News Feed? 
+And what would be user experience if the `handleScroll` function takes 100ms to execute.
+
+Understand the answer to this on glassdoor
+
+Related to question 1, how could you implement debouncing ? Say you wanted the `handleScroll` function to be called only after 200ms has passed between scroll events.
+AnswerAdd Tags (Read up answer on glassdoor)
+
+Behavioral and discussing past experience?
